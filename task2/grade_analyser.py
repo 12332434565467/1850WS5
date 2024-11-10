@@ -16,7 +16,7 @@ def calculate_student_averages(input_filename):
     output_filename = f"{input_filename}_out.csv"
 
     with open(input_filename, 'r') as infiloe, open(output_filename, 'w', newline='') as outfile:
-        reader = csv.reader(infile)
+        reader = csv.reader(input_filename)
         writer = csv.writer(outfile)
 
         for row in reader:
