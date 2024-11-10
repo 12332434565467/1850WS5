@@ -30,7 +30,7 @@ def calculate_student_averages(input_filename):
             if grades:
                 average_grade = sum(grades) / len(grades)
                 classification = classify_grade(average_grade)
-                writer.writerow([student_id, f"{average_grsde:.2f}", classification])
+                writer.writerow([student_id, f"{average_grade:.2f}", classification])
 
 def main():
     input_filename = input("Enter the filename of the student file: ").strip()
